@@ -1,43 +1,53 @@
-[简体中文](./README.md) | [English](#) | [繁體中文](./README.zh-Hant.md) | [日本語](./README.ja.md) | [Русский](./README.ru.md)
+# PCB Blender Rendering Extension
 
-# pro-api-sdk
+An extension for JLCEDA Pro that sends PCB 3D models to Blender for high-quality rendering via WebSocket.
 
-JLCEDA & EasyEDA Pro Extension API Development Kit
+## Project Overview
 
-<a href="https://github.com/easyeda/pro-api-sdk" style="vertical-align: inherit;" target="_blank"><img src="https://img.shields.io/github/stars/easyeda/pro-api-sdk" alt="GitHub Repo Stars" class="not-medium-zoom-image" style="display: inline; vertical-align: inherit;" /></a>&nbsp;<a href="https://github.com/easyeda/pro-api-sdk/issues" style="vertical-align: inherit;" target="_blank"><img src="https://img.shields.io/github/issues/easyeda/pro-api-sdk" alt="GitHub Issues" class="not-medium-zoom-image" style="display: inline; vertical-align: inherit;" /></a>&nbsp;<a href="https://github.com/easyeda/pro-api-sdk" style="vertical-align: inherit;" target="_blank"><img src="https://img.shields.io/github/repo-size/easyeda/pro-api-sdk" alt="GitHub Repo Size" class="not-medium-zoom-image" style="display: inline; vertical-align: inherit;" /></a>&nbsp;<a href="https://choosealicense.com/licenses/apache-2.0/" style="vertical-align: inherit;" target="_blank"><img src="https://img.shields.io/github/license/easyeda/pro-api-sdk" alt="GitHub License" class="not-medium-zoom-image" style="display: inline; vertical-align: inherit;" /></a>&nbsp;<a href="https://www.npmjs.com/package/@jlceda/pro-api-types" style="vertical-align: inherit;" target="_blank"><img src="https://img.shields.io/npm/v/%40jlceda%2Fpro-api-types?label=pro-api-types" alt="NPM Version" class="not-medium-zoom-image" style="display: inline; vertical-align: inherit;" /></a>&nbsp;<a href="https://www.npmjs.com/package/@jlceda/pro-api-types" style="vertical-align: inherit;" target="_blank"><img src="https://img.shields.io/npm/d18m/%40jlceda%2Fpro-api-types" alt="NPM Downloads" class="not-medium-zoom-image" style="display: inline; vertical-align: inherit;" /></a>
+This extension provides seamless integration between PCB design and Blender 3D rendering software, enabling you to:
 
-> [!NOTE]
->
-> For more information on the development of EasyEDA Pro Extension, please visit：[https://prodocs.easyeda.com/en/api/guide/](https://prodocs.easyeda.com/en/api/guide/)
+![alt text](images/0.gif)
 
-## Enter Development
+- **One-Click Rendering**: Send PCB 3D models directly from JLCEDA to Blender
+- **Real-time Connection**: WebSocket real-time communication with connection status monitoring
+- **High-Quality Rendering**: Leverage Blender's powerful rendering engine to create professional-grade PCB visualizations
+- **Automated Processing**: Automatically import PCB models and set up Blender scenes
 
-This development tool set contains all the environments and tools for developing the [EasyEDA Pro Edition](https://pro.easyeda.com/) extension package, and has built-in recommended rules for Prettier and ESLint.
+## Environment Setup
 
-1. Clone the [pro-api-sdk](https://github.com/easyeda/pro-api-sdk) project repository to your local computer
+### 1. Install Extension and Enable External Interaction
 
-    ```shell
-    git clone --depth=1 https://github.com/easyeda/pro-api-sdk.git
-    ```
+- Import this extension's eext file in Settings > Extensions > Extension Manager, enable it and allow external interaction.
 
-2. Initializing the development environment (installing dependencies)
+![Figure 0](images/1.png)  
 
-    ```shell
-    npm install
-    ```
+### 2. Install Blender 4.5
 
-3. Make your changes ...
+- Download and install Blender 4.5 from the [official Blender website](https://www.blender.org/download/).
 
-4. Compile the extension package
+## Usage Instructions
 
-    ```shell
-    npm run build
-    ```
+#### Step 1: Start Blender Service
 
-5. Install the extension package generated under `./build/dist/` in EasyEDA Pro Edition
+1. Use archive software to open the downloaded extension file and extract the pcb_importer_websocket.py script from the script directory.
+2. Open Blender.
+3. Click on "Scripting" in the top menu bar, open the extracted script in the script editor and run it.
+   ![alt text](images/2.png)
+4. Running the script will automatically install library files and wait for JLCEDA connection.
+   
+#### Step 2: Use in EDA
 
-## Open-source License
+1. Open your PCB project in JLCEDA.
+2. Click **Render** → **Blender Render** in the top menu bar to start connection.
+   ![alt text](images/3.png)
+3. After successful connection, files will be automatically pushed to Blender.
+   ![alt text](images/4.png)
 
-<a href="https://choosealicense.com/licenses/apache-2.0/" style="vertical-align: inherit;" target="_blank"><img src="https://img.shields.io/github/license/easyeda/pro-api-sdk" alt="GitHub License" class="not-medium-zoom-image" style="display: inline; vertical-align: inherit;" /></a>
+#### Step 3: Complete Rendering in Blender
 
-This development tool uses the [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/) open source license agreement. You can only use the **嘉立创EDA** and **EasyEDA** trademark information for the **function description part** and **open source release title part** of the extension package developed based on this tool.
+1. After model import is complete, the following will be automatically adjusted in Blender:
+   - Materials and textures
+   - Lighting settings
+   - Camera angles
+  
+2. After adjusting materials and lighting, press F12 to render the image.

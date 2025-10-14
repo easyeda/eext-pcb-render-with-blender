@@ -29,7 +29,7 @@
 
 #### 步骤 1：启动 Blender 服务
 
-1. 用压缩包软件打开下载的扩展文件，将 script 目录下的 pcb_importer_websocket.py 脚本解压。
+1. 用压缩包软件打开下载的扩展文件，将 script 目录下的 [pcb_importer_websocket.py](https://github.com/easyeda/eext-pcb-render-with-blender/blob/main/script/pcb_importer_websocket.py) 脚本解压。
 2. 打开 Blender。
 3. 在顶部菜单栏点击 Scripting,在脚本编辑器打开解压的脚本并运行。
    ![alt text](images/2.png)
