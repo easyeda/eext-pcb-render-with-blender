@@ -1,0 +1,57 @@
+{
+	"name": "pcb-render-with-blender",
+	"uuid": "dea4714fb3cb4c039ffbb9ce1b22f7cb",
+	"displayName": "PCB Blender 渲染工具",
+	"description": "通过 WebSocket 将PCB 3D模型发送到Blender进行高质量渲染的扩展工具。支持实时连接状态监控、文件传输进度显示和自动场景设置。",
+	"version": "1.10.1",
+	"publisher": "JLCEDA <support@lceda.cn>",
+	"engines": {
+		"eda": "^2.3.0"
+	},
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "extension-store",
+		"url": ""
+	},
+	"categories": "PCB",
+	"keywords": [
+		"PCB",
+		"Blender",
+		"3D渲染",
+		"WebSocket",
+		"可视化"
+	],
+	"images": {
+		"logo": "./images/logo.png"
+	},
+	"homepage": "https://pro.lceda.cn",
+	"bugs": "https://lceda.cn/page/feedback?originPage=other",
+	"activationEvents": {},
+	"entry": "./dist/index",
+	"dependentExtensions": {},
+	"headerMenus": {
+		"pcb": [
+			{
+				"id": "render",
+				"title": "渲染",
+				"menuItems": [
+					{
+						"id": "RenderPCB",
+						"title": "Blender 渲染",
+						"registerFn": "renderPCBInBlender"
+					},
+					{
+						"id": "DisconnectBlender",
+						"title": "断开连接",
+						"registerFn": "disconnectBlender"
+					},
+					{
+						"id": "About",
+						"title": "About...",
+						"registerFn": "about"
+					}
+				]
+			}
+		]
+	}
+}
