@@ -1,6 +1,6 @@
 # PCB Blender Rendering Extension
 
-An extension for JLCEDA Pro that sends PCB 3D models to Blender for high-quality rendering via WebSocket.
+An extension for EasyEDA Pro that sends PCB 3D models to Blender for high-quality rendering via WebSocket.
 
 ## Project Overview
 
@@ -8,7 +8,7 @@ This extension provides seamless integration between PCB design and Blender 3D r
 
 ![alt text](images/0.gif)
 
-- **One-Click Rendering**: Send PCB 3D models directly from JLCEDA to Blender
+- **One-Click Rendering**: Send PCB 3D models directly from EasyEDA to Blender
 - **Real-time Connection**: WebSocket real-time communication with connection status monitoring
 - **High-Quality Rendering**: Leverage Blender's powerful rendering engine to create professional-grade PCB visualizations
 - **Automated Processing**: Automatically import PCB models and set up Blender scenes
@@ -33,11 +33,11 @@ This extension provides seamless integration between PCB design and Blender 3D r
 2. Open Blender.
 3. Click on "Scripting" in the top menu bar, open the extracted script in the script editor and run it.
    ![alt text](images/2.png)
-4. Running the script will automatically install library files and wait for JLCEDA connection.
+4. Running the script will automatically install library files and wait for EasyEDA connection.
    
 #### Step 2: Use in EDA
 
-1. Open your PCB project in JLCEDA.
+1. Open your PCB project in EasyEDA.
 2. Click **Render** → **Blender Render** in the top menu bar to start connection.
    ![alt text](images/3.png)
 3. After successful connection, files will be automatically pushed to Blender.
