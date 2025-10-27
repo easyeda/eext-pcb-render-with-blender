@@ -4,28 +4,22 @@
 	"displayName": "PCB Blender 渲染工具",
 	"description": "通过 WebSocket 将PCB 3D模型发送到Blender进行高质量渲染的扩展工具。支持实时连接状态监控、文件传输进度显示和自动场景设置。",
 	"version": "1.10.1",
-	"publisher": "JLCEDA <support@lceda.cn>",
+	"publisher": "JLCEDA",
 	"engines": {
 		"eda": "^2.3.0"
 	},
 	"license": "Apache-2.0",
 	"repository": {
-		"type": "extension-store",
-		"url": ""
+		"type": "github",
+		"url": "https://github.com/easyeda/eext-pcb-render-with-blender"
 	},
 	"categories": "PCB",
-	"keywords": [
-		"PCB",
-		"Blender",
-		"3D渲染",
-		"WebSocket",
-		"可视化"
-	],
+	"keywords": ["PCB", "Blender", "3D渲染", "WebSocket", "可视化"],
 	"images": {
 		"logo": "./images/logo.png"
 	},
-	"homepage": "https://pro.lceda.cn",
-	"bugs": "https://lceda.cn/page/feedback?originPage=other",
+	"homepage": "https://github.com/easyeda/eext-pcb-render-with-blender",
+	"bugs": "https://github.com/easyeda/eext-pcb-render-with-blender/issues",
 	"activationEvents": {},
 	"entry": "./dist/index",
 	"dependentExtensions": {},
