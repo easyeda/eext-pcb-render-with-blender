@@ -29,7 +29,7 @@
 
 #### 步骤 1：启动 Blender 服务
 
-1. 下载导入脚本：[链接下载](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MZ4JbRQ9NomCqHx0NHpcNLdvnJc/?mount_node_token=Bxm9doIa5oFyBVx6O1FckYmInnf&mount_point=docx_file) 或  [Github](https://github.com/easyeda/eext-pcb-render-with-blender/blob/main/script/pcb_importer_websocket.py)
+1. 下载导入脚本：[链接下载](https://lceda001.feishu.cn/wiki/EV2fwL7UTiz4LdkYix8c7X9xnee?from=from_copylink) 或  [Github](https://github.com/easyeda/eext-pcb-render-with-blender/blob/main/script/pcb_importer_websocket.py)
 2. 打开 Blender。
 3. 在顶部菜单栏点击 Scripting,在脚本编辑器打开解压的脚本并运行。
    ![alt text](images/2.png)
