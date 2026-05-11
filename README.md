@@ -1,5 +1,7 @@
 # PCB Blender 渲染扩展
 
+[English](./README.en.md)
+
 一个用于嘉立创EDA专业版的扩展，通过 WebSocket 将 PCB 3D 模型发送到 Blender 进行高质量渲染。
 
 ## 项目简介

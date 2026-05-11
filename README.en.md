@@ -1,6 +1,8 @@
 # PCB Blender Rendering Extension
 
-An extension for EasyEDA Pro that sends PCB 3D models to Blender for high-quality rendering via WebSocket.
+[中文](./README.md)
+
+An extension for EasyEDA Professional Edition that sends PCB 3D models to Blender for high-quality rendering via WebSocket.
 
 ## Project Overview
 
@@ -17,7 +19,7 @@ This extension provides seamless integration between PCB design and Blender 3D r
 
 ### 1. Install Extension and Enable External Interaction
 
-- Import this extension's eext file in Settings > Extensions > Extension Manager, enable it and allow external interaction.
+- Import this extension's eext file in Settings - Extensions - Extension Manager, enable it and allow external interaction.
 
 ![Figure 0](images/1.png)  
 
@@ -29,9 +31,9 @@ This extension provides seamless integration between PCB design and Blender 3D r
 
 #### Step 1: Start Blender Service
 
-1. Use archive software to open the downloaded extension file and extract the pcb_importer_websocket.py script from the script directory.
+1. Download the import script: [Feishu Link](https://lceda001.feishu.cn/wiki/EV2fwL7UTiz4LdkYix8c7X9xnee?from=from_copylink) or [GitHub](https://github.com/easyeda/eext-pcb-render-with-blender/blob/main/script/pcb_importer_websocket.py)
 2. Open Blender.
-3. Click on "Scripting" in the top menu bar, open the extracted script in the script editor and run it.
+3. Click on "Scripting" in the top menu bar, open the downloaded script in the script editor and run it.
    ![alt text](images/2.png)
 4. Running the script will automatically install library files and wait for EasyEDA connection.
    
